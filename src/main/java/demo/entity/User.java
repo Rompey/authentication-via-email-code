@@ -2,7 +2,6 @@ package demo.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.Where;
 
 import java.util.Date;
 
@@ -13,7 +12,6 @@ import java.util.Date;
 @NoArgsConstructor
 @Getter
 @Setter
-@Where(clause = "is_enabled = true")
 public class User {
 
     @Id
