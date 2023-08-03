@@ -14,8 +14,4 @@ public class ArgonUtil {
     public static String hashPassword(CharSequence rawPassword) {
         return ARGON_2.hash(4, 12000, 8, rawPassword.toString());
     }
-
-    public static Boolean matchesUserPassword(CharSequence rawPassword, String encodedPassword) {
-        return ARGON_2.verify(encodedPassword, rawPassword.toString());
-    }
 }
